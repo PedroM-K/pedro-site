@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pedro Moreira de Souza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Menu fixo que fica sempre no topo para navegar entre as seções -->
+  <nav class="menu" aria-label="Navegação principal">
+    <!-- Cada botão abre uma seção diferente e muda o fundo -->
+    <button class="menu-btn active" data-section="sobre" data-color="sobre">Sobre mim</button>
+    <button class="menu-btn" data-section="formacao" data-color="formacao">Formação</button>
+    <button class="menu-btn" data-section="portfolio" data-color="portfolio">Portfólio</button>
+    <button class="menu-btn" data-section="contato" data-color="contato">Contato</button>
+  </nav>
+
+  <main id="viewport" aria-live="polite">
+    <!-- Seção SOBRE MIM -->
+    <section id="sobre" class="content active" aria-labelledby="ttl-sobre">
+      <div class="section-wrap">
+        <figure class="section-media">
+          <!-- Aqui coloco a imagem que representaessa parte -->
+          <img src="imagens/sobre.jpg" alt="Foto representativa de Pedro e tecnologia" />
+        </figure>
+
+        <article class="section-card">
+          <h2 id="ttl-sobre">Sobre mim</h2>
+
+          <div class="grid-two">
+            <div class="card-block">
+              <h3>Quem sou</h3>
+              <p>
+                Sou <strong>Pedro Moreira de Souza</strong>, fascinado por como a tecnologia resolve problemas reais e amplia o alcance das ideias. 
+                Para mim, programar é transformar pensamento em impacto: é pegar algo abstrato, estruturar e entregar experiência útil de verdade.
+              </p>
+            </div>
+
+            <div class="card-block">
+              <h3>Por que tecnologia me fascina</h3>
+              <p>
+                Gosto de entender a lógica por trás das coisas e de construir soluções que facilitam a vida das pessoas. 
+                Admiro o ciclo completo: analisar um desafio, pesquisar, prototipar, testar, melhorar e entregar valor. 
+                A tecnologia me puxa porque une <em>criatividade</em>, <em>raciocínio</em> e <em>impacto</em>.
+              </p>
+            </div>
+
+            <div class="card-block">
+              <h3>Meu objetivo</h3>
+              <p>
+                Quero <strong>mudar o mundo</strong> começando pelo que está ao meu alcance: 
+                criar projetos limpos, acessíveis e bem pensados, que ajudem pessoas e empresas a tomar decisões melhores e viver experiências digitais de qualidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="pill-list">
+            <span class="pill">Curioso</span>
+            <span class="pill">Foco em qualidade</span>
+            <span class="pill">Aprendizagem contínua</span>
+            <span class="pill">Prototipagem rápida</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção FORMAÇÃO -->
+    <section id="formacao" class="content" aria-labelledby="ttl-formacao">
+      <div class="section-wrap">
+        <figure class="section-media">
+          <!-- Imagem que representa minha formaçao -->
+          <img src="imagens/formacao.jpg" alt="Imagem relacionada a estudos e formação" />
+        </figure>
+
+        <article class="section-card">
+          <h2 id="ttl-formacao">Formação</h2>
+
+          <div class="grid-two">
+            <div class="card-block">
+              <h3>Acadêmica</h3>
+              <ul class="list">
+                <li>Ensino superior em andamento (área de tecnologia).</li>
+                <li>Cursos complementares de desenvolvimento web e fundamentos de programação.</li>
+              </ul>
+            </div>
+
+            <div class="card-block">
+              <h3>Idiomas</h3>
+              <ul class="list">
+                <li>Inglês — nível intermediário.</li>
+                <li>Francês — nível básico.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-block">
+            <h3>Competências em evolução</h3>
+            <p>
+              Organização de código, boas práticas de UI/UX, acessibilidade, semântica HTML e 
+              estilização avançada com CSS, além de interações e estados com JavaScript puro.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção PORTFÓLIO -->
+    <section id="portfolio" class="content" aria-labelledby="ttl-portfolio">
+      <div class="section-wrap">
+        <figure class="section-media">
+          <!-- Imagem para a parte de portfólio -->
+          <img src="imagens/portfolio.jpg" alt="Imagem representando projetos e portfólio" />
+        </figure>
+
+        <article class="section-card">
+          <h2 id="ttl-portfolio">Portfólio</h2>
+
+          <div class="card-block">
+            <h3>Projeto em andamento (longo prazo)</h3>
+            <p>
+              Estou planejando um <strong>aplicativo de simulação</strong> que una engenharia e astronomia,
+              com o objetivo de modelar fenômenos, testar hipóteses e visualizar comportamentos em diferentes cenários.  
+              A ideia é combinar precisão técnica com uma interface clara e acessível, para que estudantes e entusiastas
+              possam explorar conceitos complexos de forma interativa.
+            </p>
+          </div>
+
+          <div class="card-block">
+            <h3>Projeto finalizado</h3>
+            <p>
+              Desenvolvi uma <strong>calculadora científica web</strong> para praticar e consolidar conhecimentos de HTML, CSS e JavaScript.  
+              Ela realiza operações básicas e inclui uma interface organizada e responsiva.
+            </p>
+            <!-- Botão que leva direto pro meu projeto publicado -->
+            <a
+              class="btn-primary"
+              href="https://pedrom-k.github.io/Calculador"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Acessar Calculadora
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção CONTATO -->
+    <section id="contato" class="content" aria-labelledby="ttl-contato">
+      <div class="section-wrap">
+        <figure class="section-media">
+          <!-- Imagem usada para simbolizar contato -->
+          <img src="imagens/contato.jpg" alt="Imagem ilustrativa de comunicação/contato" />
+        </figure>
+
+        <article class="section-card">
+          <h2 id="ttl-contato">Contato</h2>
+
+          <!-- Aqui deixei as informações de contato -->
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="info-label">E-mail</span>
+              <a class="info-value" href="mailto:pedromoreiralonga999@gmail.com">
+                pedromoreiralonga999@gmail.com
+              </a>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Telefone</span>
+              <a class="info-value" href="tel:5562993581538">62 99358-1538</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; 2025 Pedro Moreira de Souza</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
